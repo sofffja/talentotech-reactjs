@@ -1,11 +1,12 @@
 .button {
-  background-color: #ffffff33;
-  color: #f3f2f0;
+  background-color: var(--accent);
+  color: var(--foreground);
   border: none;
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
 
 .button:hover {
-  background-color: #ffffff66;
+  background-color: var(--foreground);
+  color: var(--accent);
 }

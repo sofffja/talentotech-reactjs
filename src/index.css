@@ -3,14 +3,20 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: #f3f2f0;
-  background-color: #292929;
+  /* color-scheme: light dark; */
+  color: var(--foreground);
+  background-color: var(--background);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --background: #202020;
+  --foreground: #f3f2f0;
+  --accent: #00f;
+  --primary: #0ff;
+  --secondary: #ff0;
 }
 
 * {
