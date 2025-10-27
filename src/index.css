@@ -49,9 +49,20 @@ img {
   margin: 0 auto;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #292929;
-    background-color: #f3f2f0;
-  }
+.divide-y > :not(:last-child) {
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  border-color: currentColor;
+}
+
+.divide-x > :not(:last-child) {
+  border-style: solid;
+  border-width: 0 1px 0 0;
+  border-color: currentColor;
+}
+
+.divide > :not(:last-child) {
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  border-color: currentColor;
 }
