@@ -2,10 +2,13 @@ import './Products.css';
 import { useState, useEffect, useContext } from 'react';
 import Button from '../../components/Button/Button';
 import { CartContext } from '../../context/CartContext';
+import { useNavigate } from 'react-router';
 
 export default function Products() {
   const [products, setProducts] = useState([]);
   const [error, setError] = useState(null);
+
+  const navigate = useNavigate();
 
   const { addToCart } = useContext(CartContext);
 
@@ -35,7 +38,9 @@ export default function Products() {
               <p className="products__item-price">$ {product.price}</p>
             </div>
             <div className="products__item-actions">
-              <Button>Ver más</Button>
+              <Button onClick={() => navigate(`/productos/${product.id}`)}>
+                Ver más
+              </Button>
               <Button onClick={() => addToCart(product)}>Agregar</Button>
             </div>
           </li>
