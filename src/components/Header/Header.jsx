@@ -1,7 +1,11 @@
 import './Header.css';
 import { NavLink } from 'react-router';
+import { useContext } from 'react';
+import { CartContext } from '../../context/CartContext';
 
 export default function Header() {
+  const { cartItems } = useContext(CartContext);
+
   return (
     <div className="header">
       <h1>Tienda</h1>
@@ -16,7 +20,7 @@ export default function Header() {
           <li>
             <NavLink to="/carrito" className="header__cart">
               <span>Carrito</span>
-              <span className="header__count">0</span>
+              <span className="header__count">{cartItems.length}</span>
             </NavLink>
           </li>
         </ul>
