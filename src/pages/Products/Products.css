@@ -1,0 +1,40 @@
+.products h2 {
+  margin-bottom: 1rem;
+}
+
+.products__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.products__item {
+  background-color: #ffffff11;
+  border: 1px solid #ffffff33;
+  display: flex;
+  flex-direction: column;
+}
+
+.products__item img {
+  background-color: #ffffff11;
+  padding: 1rem;
+}
+
+.products__item-info {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 100%;
+}
+
+.products__item-info h3 {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+.products__item-price {
+  padding-top: 0.5rem;
+  margin-top: auto;
+  text-align: end;
+}
