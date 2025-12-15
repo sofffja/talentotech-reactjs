@@ -1,0 +1,22 @@
+.admin {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin__product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid var(--secondary);
+}
+
+.admin__product-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.admin__add-product-button {
+  align-self: flex-end;
+  margin: 10px;
+}

@@ -1,0 +1,52 @@
+.product-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-form {
+  width: 100%;
+  max-width: 500px;
+}
+
+.product-form h2 {
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+  border-color: var(--primary);
+  background-color: var(--background);
+}
+
+.form-goup label {
+  font-weight: bold;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.input-error {
+  border-color: #ff0000;
+}
+
+.error-message {
+  color: #740000;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
