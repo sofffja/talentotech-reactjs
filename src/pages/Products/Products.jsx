@@ -10,7 +10,7 @@ export default function Products() {
   const { products, loading, error } = useProducts();
   const [searchTerm, setSearchTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-  const productsPerPage = 6;
+  const productsPerPage = 10;
 
   const navigate = useNavigate();
   const { addToCart } = useContext(CartContext);
@@ -29,8 +29,14 @@ export default function Products() {
   const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
 
   const handlePageChange = (pageNumber) => {
-    setCurrentPage(pageNumber);
+    if (pageNumber >= 1 && pageNumber <= totalPages) {
+      setCurrentPage(pageNumber);
+    }
   };
+
+  if (currentPage > totalPages && totalPages > 0) {
+    setCurrentPage(1);
+  }
 
   if (error) return <p>{error}</p>;
   if (loading) return <p>Loading...</p>;
