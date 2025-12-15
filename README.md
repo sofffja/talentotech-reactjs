@@ -1,16 +1,56 @@
-# React + Vite
+# Tech Talent ReactJS - Tienda
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es un e-commerce desarrollado como parte del curso de ReactJS de Talento Tech. La aplicación permite a los usuarios navegar por un catálogo de productos, gestionar un carrito de compras y acceder a un panel de administración para actualizar el inventario.
 
-Currently, two official plugins are available:
+## Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 19**: Librería principal para la interfaz de usuario.
+- **Vite**: Empaquetador y entorno de desarrollo rápido.
+- **React Router 7**: Manejo de rutas y navegación.
+- **Context API**: Gestión del estado global (Carrito y Autenticación).
+- **CSS3**: Estilos personalizados con variables CSS.
+- **Axios**: Cliente HTTP para consumo de API.
+- **React Toastify**: Notificaciones para el usuario.
+- **MockAPI**: Backend simulado para persistencia de datos.
 
-## React Compiler
+## Instalación y Uso
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. **Clonar el repositorio**:
 
-## Expanding the ESLint configuration
+   ```bash
+   git clone https://github.com/sofffja/talentotech-reactjs.git
+   cd talentotech-reactjs
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. **Instalar dependencias**:
+
+   ```bash
+   npm install
+   ```
+
+3. **Configurar variables de entorno**:
+   Crea un archivo `.env` en la raíz del proyecto:
+
+   ```env
+   VITE_API_URL=https://tu-api-url.mockapi.io/api/v1
+   ```
+
+4. **Iniciar el servidor de desarrollo**:
+
+   ```bash
+   npm run dev
+   ```
+
+5. **Abrir en el navegador**:
+   La aplicación estará disponible en `http://localhost:5173`.
+
+## Credenciales de Acceso
+
+Para acceder al panel de administración:
+
+- **Usuario**: `admin`
+- **Contraseña**: `password`
+
+---
+
+Desarrollado para Talento Tech.
