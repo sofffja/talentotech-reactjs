@@ -12,11 +12,23 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --background: #202020;
-  --foreground: #f3f2f0;
-  --accent: #00f;
-  --primary: #0ff;
-  --secondary: #ff0;
+  --background: #7d7278;
+  --foreground: #18110a;
+  --primary: #a18e5a;
+  --accent: #f00001;
+  --secondary: #614e09;
+
+  /* --background: #e0c9bc;
+  --foreground: #458850;
+  --accent: #e065ce;
+  --primary: #9acd92;
+  --secondary: #a5a5c1; */
+
+  /* --background: #4d844d;
+  --foreground: #fdf5af;
+  --accent: #93784b;
+  --primary: #f806f2;
+  --secondary: #0cbde7; */
 }
 
 * {

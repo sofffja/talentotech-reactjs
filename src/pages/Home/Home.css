@@ -3,12 +3,13 @@
 }
 
 .home h2 {
-  font-size: 14.5vw;
+  font-size: 14vw;
   text-transform: uppercase;
+  font-weight: bolder;
 }
 
 .home p {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 5vw;
   font-style: italic;
 }
@@ -16,5 +17,5 @@
 .home button {
   margin-top: 20px;
   font-size: 5vw;
-  transform: scaleX(5);
+  width: 100%;
 }

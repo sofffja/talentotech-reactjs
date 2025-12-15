@@ -7,6 +7,14 @@
 }
 
 .button:hover {
-  background-color: var(--foreground);
-  color: var(--accent);
+  background-color: var(--primary);
+  color: var(--foreground);
+}
+
+.button--secondary {
+  background-color: var(--primary);
+  color: var(--foreground);
+}
+.button--secondary:hover {
+  background-color: var(--secondary);
 }
