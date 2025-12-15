@@ -31,7 +31,7 @@
 }
 
 .cart__item-info h3 {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-style: italic;
   margin: 0;
 }
@@ -44,7 +44,8 @@
 .cart__item button {
   border-radius: 0%;
   border: none;
-  background-color: var(--foreground);
+  background-color: var(--secondary);
+  border-left: 1px solid currentColor;
   padding: 1rem;
   cursor: pointer;
 }

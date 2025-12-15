@@ -1,12 +1,9 @@
-import './Cart.css';
-import { useContext } from 'react';
-import { CartContext } from '../../context/CartContext';
-import Button from '../../components/Button/Button';
+import "./Cart.css";
+import { useCartContext } from "../../context/CartContext";
+import Button from "../../components/Button/Button";
 
 export default function Cart() {
-  const { cartItems, clearCart, removeFromCart } = useContext(CartContext);
-
-  console.log(cartItems);
+  const { cartItems, clearCart, removeFromCart } = useCartContext();
 
   return (
     <div className="cart">
@@ -17,7 +14,7 @@ export default function Cart() {
         <ul className="cart__list">
           {cartItems.map((item, index) => (
             <li key={index} className="cart__item">
-              <img src={item.images[0]} alt={item.title} />
+              <img src={item.image} alt={item.title} />
               <div className="cart__item-info">
                 <h3>{item.title}</h3>
                 <p className="cart__item-price">$ {item.price}</p>
@@ -34,7 +31,7 @@ export default function Cart() {
 
       <div className="cart__buttons">
         <Button onClick={clearCart}>Limpiar carrito</Button>
-        <Button>Comprar</Button>
+        <Button variant="secondary">Comprar</Button>
       </div>
     </div>
   );
