@@ -23,6 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 
+.env
+
 PLAN.md
 TODO.md
 consignav1.md
