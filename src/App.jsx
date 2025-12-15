@@ -7,13 +7,13 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
 import Home from "./pages/Home/Home";
-import Login from "./pages/Login";
+import Login from "./pages/Login/Login";
 import Products from "./pages/Products/Products";
 import Product from "./pages/Product/Product";
 import Cart from "./pages/Cart/Cart";
 import Checkout from "./pages/Checkout/Checkout";
-import AddProduct from "./pages/AddProduct";
-import EditProduct from "./pages/EditProduct";
+import AddProduct from "./pages/AddProduct/AddProduct";
+import EditProduct from "./pages/EditProduct/EditProduct";
 import Admin from "./pages/Admin/Admin";
 import ProtectedRoute from "./components/ProtectedRoute";
 

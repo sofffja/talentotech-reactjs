@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router";
-import ProductForm from "../components/ProductForm/ProductForm";
-import { createProduct } from "../api/client";
+import ProductForm from "../../components/ProductForm/ProductForm";
+import { createProduct } from "../../api/client";
 import { toast } from "react-toastify";
 
 export default function AddProduct() {
