@@ -4,11 +4,12 @@
   align-items: center;
   padding: 1rem;
   border-bottom: 1px solid #ffffff33;
+  position: relative;
 }
 
 .header h1 {
   font-size: 1.5rem;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-style: italic;
 }
 
@@ -17,10 +18,17 @@
   align-items: center;
   gap: 1rem;
   text-transform: uppercase;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .header a {
   color: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .header__cart {
@@ -32,6 +40,10 @@
   border-radius: 99px;
 }
 
+.header__cart:hover {
+  background-color: var(--secondary);
+}
+
 .header__count {
   background-color: #ffffff33;
   padding: 0.2rem;
@@ -41,4 +53,65 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 0.8rem;
+}
+
+.header__admin {
+  padding-left: 1rem;
+  border-left: 1px solid #ffffff33;
+}
+
+.header__toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .header__toggle {
+    display: block;
+  }
+
+  .header__nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--secondary); 
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .header__nav--open {
+    max-height: 500px;
+  }
+
+  .header__menu {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .header__menu li {
+    width: 100%;
+  }
+
+  .header__menu a {
+    justify-content: flex-start;
+    padding: 0.5rem;
+  }
+  
+  .header__admin {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid #ffffff33;
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+  }
 }
