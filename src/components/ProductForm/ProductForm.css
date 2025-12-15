@@ -32,10 +32,6 @@
   background-color: var(--background);
 }
 
-.form-goup label {
-  font-weight: bold;
-}
-
 .form-group textarea {
   resize: vertical;
   min-height: 100px;
